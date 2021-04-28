@@ -1,5 +1,6 @@
 package school.cactus.succulentshop
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputLayout
@@ -23,6 +24,9 @@ class LoginActivity : AppCompatActivity() {
                 passwordInputLayout.validate()
                 identifierInputLayout.validate()
             }
+            createAccountButton.setOnClickListener{
+                navigateToSignUpActivity()
+            }
         }
     }
 
@@ -39,4 +43,9 @@ class LoginActivity : AppCompatActivity() {
         binding.passwordInputLayout -> passwordValidator
         else -> throw IllegalArgumentException("Cannot find any validator for the given TextInputLayout")
     }
+    private fun navigateToSignUpActivity(){
+        val intent= Intent(this,SignupActivity::class.java)
+        startActivity(intent)
+    }
+
 }
