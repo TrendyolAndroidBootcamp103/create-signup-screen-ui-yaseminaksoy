@@ -10,4 +10,12 @@
     <string name="already_have_an_account">Zaten hesabınız var mı?</string>
     <string name="this_field_is_required">Bu alan gereklidir.</string>
     <string name="identifier_is_too_short">Karakter sayısı çok kısa.</string>
+    <string name="email_is_invalid">Geçersiz eposta</string>
+    <string name="identifier_is_too_long">Karakter sayısı çok fazla</string>
+    <string name="password_is_too_short">Parola çok kısa</string>
+    <string name="password_is_too_long">Parola çok uzun</string>
+    <string name="password_is_invalid">Parola en az bir sayı, bir büyük, bir küçük ve bir özel karakter içermelidir.</string>
+    <string name="username_is_too_short">Kullanıcı adı çok kısa</string>
+    <string name="username_is_too_long">Kullanıcı adı çok uzun</string>
+    <string name="username_is_invalid">Kullanıcı adı sadece a-z, 0-9 ve _ karakterlerini içerebilir.</string>
 </resources>

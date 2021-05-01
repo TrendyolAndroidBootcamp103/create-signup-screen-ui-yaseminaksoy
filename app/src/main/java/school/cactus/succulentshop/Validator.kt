@@ -1,5 +1,6 @@
 package school.cactus.succulentshop
 
 interface Validator {
-    fun validate(field: String): Int?
+    fun validateLogIn(field: String): Int?
+    fun validateSignUp(field:String): Int?
 }

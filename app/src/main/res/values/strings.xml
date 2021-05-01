@@ -10,4 +10,12 @@
     <string name="already_have_an_account">Already have an account?</string>
     <string name="this_field_is_required">This field is required.</string>
     <string name="identifier_is_too_short">Identifier is too short.</string>
+    <string name="email_is_invalid">Invalid email</string>
+    <string name="identifier_is_too_long">Identifier is too long</string>
+    <string name="password_is_too_short">Password is too short</string>
+    <string name="password_is_too_long">Password is too long</string>
+    <string name="password_is_invalid">Password must contain one digit, one uppercase letter, one lowercase letter and one special character.</string>
+    <string name="username_is_too_short">Usernama is too short</string>
+    <string name="username_is_too_long">Username is too long</string>
+    <string name="username_is_invalid">Username can only include a-z, 0-9 and _ characters.</string>
 </resources>

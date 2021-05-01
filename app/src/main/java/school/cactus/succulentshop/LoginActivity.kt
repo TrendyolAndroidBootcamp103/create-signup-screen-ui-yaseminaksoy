@@ -31,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun TextInputLayout.validate() {
-        val errorMessage = validator().validate(editText!!.text.toString())
+        val errorMessage = validator().validateLogIn(editText!!.text.toString())
         error = errorMessage?.resolveAsString()
         isErrorEnabled = errorMessage != null
     }
