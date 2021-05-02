@@ -8,11 +8,9 @@ class UsernameValidator:Validator {
 
     override fun validateSignUp(field: String)= when{
         field.isEmpty()->R.string.this_field_is_required
-        field.length<2->R.string.username_is_too_short
+        field.length<=2->R.string.username_is_too_short
         field.length>20->R.string.username_is_too_long
-        !field.any{
-            it.isLetterOrDigit() || it.equals('_')
-        } -> R.string.username_is_invalid
+        !field.matches("^[a-z0-9_]+\$".toRegex()) -> R.string.username_is_invalid
         else->null
     }
 }
